@@ -35,9 +35,10 @@
     </decision>
     <decision id="node_2" name="Weather Advice">
         <extensionElements>
-            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="first">
                 <input bomType="cp4admin.weather_advice.weather_ds.data.Weather" collection="false" name="Weather"/>
                 <output bomType="java.lang.String" collection="false" name="Weather Advice"/>
+                <rule defaultRule="false" href="node_2/Storm%20Rule.drl" kind="BusinessRule" name="Storm Rule"/>
                 <rule defaultRule="false" href="node_2/Weather%20Table.dmt" kind="DecisionTable" name="Weather Table"/>
             </ruleset>
         </extensionElements>
