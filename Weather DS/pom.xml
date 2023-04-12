@@ -63,6 +63,7 @@
     </dependencyManagement>
     <modules>
         <module>.decisionservice</module>
+        <module>Data</module>
         <module>Weather Model</module>
     </modules>
 

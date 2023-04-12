@@ -1,0 +1,17 @@
+
+# cp4admin.weather_advice.weather_ds.data.Temperature
+cp4admin.weather_advice.weather_ds.data.Temperature#concept.label = temperature
+cp4admin.weather_advice.weather_ds.data.Temperature.cold#instance.label = cold
+cp4admin.weather_advice.weather_ds.data.Temperature.hot#instance.label = hot
+cp4admin.weather_advice.weather_ds.data.Temperature.warm#instance.label = warm
+
+# cp4admin.weather_advice.weather_ds.data.Weather
+cp4admin.weather_advice.weather_ds.data.Weather#concept.label = weather
+cp4admin.weather_advice.weather_ds.data.Weather.Weather(java.lang.Long,cp4admin.weather_advice.weather_ds.data.Temperature)#phrase.navigation = a new {weather} where {0, rain forecast} {1, temperature}
+cp4admin.weather_advice.weather_ds.data.Weather.rainForecast#phrase.action = set the rain forecast of {this} to {rain forecast}
+cp4admin.weather_advice.weather_ds.data.Weather.rainForecast#phrase.addition_setter = add {rain forecast} to the rain forecast of {this}
+cp4admin.weather_advice.weather_ds.data.Weather.rainForecast#phrase.navigation = {rain forecast} of {this}
+cp4admin.weather_advice.weather_ds.data.Weather.rainForecast#phrase.subtraction_setter = subtract {rain forecast} from the rain forecast of {this}
+cp4admin.weather_advice.weather_ds.data.Weather.temperature#phrase.action = set the temperature of {this} to {temperature}
+cp4admin.weather_advice.weather_ds.data.Weather.temperature#phrase.clearer = clear the temperature of {this}
+cp4admin.weather_advice.weather_ds.data.Weather.temperature#phrase.navigation = {temperature} of {this}
